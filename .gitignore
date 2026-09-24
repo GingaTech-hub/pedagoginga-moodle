@@ -1,0 +1,34 @@
+# Arquivos sensíveis e dados locais do Moodle
+config.php
+moodledata/
+moodle_data/
+uploaddata/
+
+# Temporários, cache e logs
+/cache/*
+/localcache/*
+/temp/*
+/dataroot/*
+*.log
+
+# Dados dinâmicos e bancos do MySQL (Evita travar o git add)
+server/mysql/data/*
+!server/mysql/data/.gitignore
+server/apache/logs/*
+server/mysql/bku/
+
+# Arquivos de dados do InnoDB/MySQL
+*.ibd
+ib_buffer_pool
+ibdata1
+ib_logfile*
+
+# Sistema e IDEs
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.tmp
+.env
+.env.local
